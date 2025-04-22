@@ -16,13 +16,23 @@ body {
     font-size: 10rem;
     font-weight: bold;
     text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000;
-    margin-bottom: 2rem;
     font-family: 'DS-Digital', sans-serif;
+}
+
+p {
+    font-family: 'DS-Digital', sans-serif;
+    color: #fff;
+    font-size: 1.3rem;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff;
+    margin-top: 0;
+    margin-bottom: 2rem;
 }
 
 .controls {
     display: flex;
     gap: 1rem;
+    position: absolute;
+    top: 2rem;
 }
 
 button {
