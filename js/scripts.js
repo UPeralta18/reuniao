@@ -38,8 +38,18 @@ function pauseTimer() {
     clearInterval(timerInterval);
 }
 
+function getMessage() {
+    fetch('text/message.txt')
+    .then(response => response.text())
+    .then(data => {
+        const messageElement = document.getElementsByClassName('message');
+        messageElement.textContent = data;
+    });
+}
+
 startBtn.addEventListener('click', startTimer);
 pauseBtn.addEventListener('click', pauseTimer);
 
 // Inicializa o contador
 updateCounter();
+getMessage();

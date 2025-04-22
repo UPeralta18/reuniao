@@ -19,8 +19,9 @@ body {
     font-family: 'DS-Digital', sans-serif;
 }
 
-p {
+p.message {
     font-family: 'DS-Digital', sans-serif;
+    text-transform: uppercase;
     color: #fff;
     font-size: 1.3rem;
     text-shadow: 0 0 10px #fff, 0 0 20px #fff;
