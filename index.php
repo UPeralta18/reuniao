@@ -8,12 +8,25 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/scripts.js" defer></script>
 </head>
+<?php
+// Lê o conteúdo atual do arquivo
+$file_path = 'text/message.txt';
+$text = '';
+if (file_exists($file_path)) {
+    $text = htmlspecialchars(file_get_contents($file_path), ENT_QUOTES, 'UTF-8');
+}
+$file_path = 'text/timer.txt';
+$timer = '';
+if (file_exists($file_path)) {
+    $timer = htmlspecialchars(file_get_contents($file_path), ENT_QUOTES, 'UTF-8');
+}
+?>
 <body>
     <div class="controls">
         <button id="startBtn">Iniciar</button>
         <button id="pauseBtn">Pausar</button>
     </div>
-    <div class="counter" id="counter">01:00:00</div>
-    <p id="message">O relogio esta correndo. Tome suas decisões com sabedoria.</p>
+    <div class="counter" id="counter"><?= $timer; ?></div>
+    <p id="message"><?= $text; ?></p>
 </body>
 </html>

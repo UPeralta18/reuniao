@@ -19,7 +19,7 @@ body {
     font-family: 'DS-Digital', sans-serif;
 }
 
-p.message {
+p#message {
     font-family: 'DS-Digital', sans-serif;
     text-transform: uppercase;
     color: #fff;
@@ -53,4 +53,45 @@ button:hover {
 
 button:active {
     background-color: #222;
+}
+
+/* Estilos básicos para o formulário */
+.form {
+    width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f5f5f5;
+    border-radius: 5px;
+}
+input#message {
+    width: 580px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+#save {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#save:hover {
+    background-color: #45a049;
+}
+.notification {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}
+.success {
+    background-color: #dff0d8;
+    color: #3c763d;
+}
+.error {
+    background-color: #f2dede;
+    color: #a94442;
 }
