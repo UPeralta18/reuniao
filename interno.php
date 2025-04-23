@@ -79,7 +79,7 @@ if (file_exists($file_path_timer)) {
         <button id="save">Salvar Texto</button>
     </div>
     <div class="form-timer">
-        <label for="timer">Timer (Formato HH:MM:SS):</label>
+        <label for="timer">Timer (Formato MM:SS):</label>
         <input type="text" id="timer" value="<?php echo $timer; ?>">
         <button id="save-timer">Salvar Timer</button>
     </div>
