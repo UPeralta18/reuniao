@@ -56,21 +56,24 @@ button:active {
 }
 
 /* Estilos básicos para o formulário */
-.form {
+.form,
+.form-timer {
     width: 600px;
     margin: 20px auto;
     padding: 20px;
     background: #f5f5f5;
     border-radius: 5px;
 }
-input#message {
+input#message,
+input#timer {
     width: 580px;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
 }
-#save {
+#save,
+#save-timer {
     background-color: #4CAF50;
     color: white;
     padding: 10px 15px;
