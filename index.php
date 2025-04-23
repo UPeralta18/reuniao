@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contador Regressivo Vermelho</title>
+    <title>Reunião</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/scripts.js" defer></script>
@@ -22,11 +22,15 @@ if (file_exists($file_path)) {
 }
 ?>
 <body>
-    <div class="controls">
-        <button id="startBtn">Iniciar</button>
-        <button id="pauseBtn">Pausar</button>
+    <!-- enter screen click the button -->
+    <div class="enter-screen">
+        <button id="enterBtn">Entrar na Reunião</button>
     </div>
+    
     <div class="counter" id="counter"><?= $timer; ?></div>
     <p id="message"><?= $text; ?></p>
+
+    <!-- audio to play -->
+    <audio id="audio" src="audio/alert.mp3" allow="autoplay"></audio>
 </body>
 </html>
